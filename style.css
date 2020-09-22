@@ -1,4 +1,4 @@
-.header{
+header{
     /* height: 70px;
     background-color: tomato;
     border-bottom: 1px solid black;
@@ -10,7 +10,7 @@
 }
   
 /* Style the top navigation bar */
-.nav{
+nav{
     /* width: 200px;
     height: 700px;
     background-color: orange;
@@ -20,7 +20,7 @@
 }
 
 /* Style the nav links */
-.nav .nav-item {
+nav .nav-item {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -30,15 +30,31 @@
 }
 
 /* Change color on hover */
-.nav .nav-item:hover {
+nav .nav-item:hover {
     background-color: #ddd;
     color: black;
 }
 
-.nav-item{
-    color: red;/* No style */
+nav .nav-total {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
+/* Change color on hover */
+nav .nav-total:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* .nav-item{
+    color: red;
+} */
+
+/* case 1 */
 /* .content{
     float: left;
     padding: 10px;
@@ -73,7 +89,8 @@
     }
 } */
 
-/* Create three equal columns that floats next to each other */
+/* case 2 */
+/* // Create three equal columns that floats next to each other
 .section{
     float: left;
     width: 20%;
@@ -98,22 +115,48 @@
     background-color: slateblue;
 }
   
-/* Clear floats after the columns */
+// Clear floats after the columns
 .content:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+// Responsive layout - makes the three columns stack on top of each other instead of next to each other
 @media screen and (max-width:600px) {
     .section, .article, aside{
         width: 100%;
     }
+} */
+
+/* Case 3 */
+section, article, aside{
+    float: left;
+    height: 300px;
+    text-align: center;
 }
 
-.footer {
+section{
+    background-color: tomato;
+    color: white;
+    width: 30%;
+}
+
+article{
+    background-color: dodgerblue;
+    color: white;
+    width: 50%;
+}
+
+aside{
+    background-color: violet;
+    color: white;
+    width: 20%;
+}
+
+footer {
     background-color: #F1F1F1;
     text-align: center;
     padding: 10px;
+    clear: both;
 }
