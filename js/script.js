@@ -2,14 +2,15 @@ const Section = document.querySelector("section")
 const BASE_COLOR = "# 34495e";
 
 function handleClick(){
-    if(Section.style.color=="red")
-    {
-        Section.style.color="blue";
-    } 
-    else
-    {
-        Section.style.color="red";
-    }
+    // if(Section.style.color=="red")
+    // {
+    //     Section.style.color="blue";
+    // } 
+    // else
+    // {
+    //     Section.style.color="red";
+    // }
+    console.log("clicked!")
 }
 
 function init(){
