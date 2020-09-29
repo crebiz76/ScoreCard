@@ -10,11 +10,12 @@ function handleClick(){
     // {
     //     Section.style.color="red";
     // }
-    console.log("clicked!")
+    
+    // console.log("clicked!")
 }
 
 function init(){
-    console.log("script.js");
+    // console.log("script.js");
     Section.style.color = "# 34495e";
     Section.addEventListener("click", handleClick);
 }
