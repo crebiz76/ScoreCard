@@ -37,7 +37,7 @@ function clickHandler(e){
 
 function makeSection(){
 
-    const section_title = section.querySelector('.section');
+    var section_title = section.querySelector('.section');
 
     switch(currentMenu.innerText)
     {
@@ -94,7 +94,8 @@ function saveName(text){
 
 function submitHandler(evt){
     evt.preventDefault();
-    const currentValue = player1_name.value;
+    var currentValue = player1_name.value;
+    section.innerText = currentValue;
 
     console.log(currentValue, evt);
     // paintGreeting(currentValue);
